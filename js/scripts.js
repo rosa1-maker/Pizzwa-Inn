@@ -28,3 +28,13 @@ function validateForm() {
     }
     event.preventDefault();
   }
+  function TotalPrice (price, quantity, delivery,toppings,crust) {
+    this.price= price;
+    this.quantity=quantity;
+    this.delivery=delivery;
+    this.toppings=toppings;
+    this.crust=crust;
+};
+TotalPrice.prototype.finalTotal = function () {
+    return ( this.price + this.delivery + this.toppings + this.crust )* this.quantity ;
+};
