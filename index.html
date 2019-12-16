@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Graduate&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -15,56 +14,57 @@
 
     <title>Pizzwa Inn</title>
 </head>
-<div id="size">
-    <p>Select your pizza size</p>
-    <button type="clickable" input="text">Small</button>
-    <button type="clickable" input="text">Medium</button>
-    <button type="clickable" input="text">Large</button>
-</div>
-<div>
-    <p>Please select the type of crust you'll like your pizza to have</p>
-    <select name="" id="crust">
-        <div>
-            <p>For<em>Thin</em>crust you can choose</p>
-            <option value="new">New Heaven style</option>
-            <img src="">
-            <option value="st">St louis style</option>
-            <img src="">
-            <option value="nep">Neopolitan</option>
-            <img src="">
-            <option value="york">New york style</option>
-            <img src="">
-
-        </div>
-        <div>
-            <p>For<em>Thin</em>crust you can choose</p>
-            <option value="new">New Heaven style</option>
-            <img src="">
-            <option value="st">St louis style</option>
-            <img src="">
-            <option value="nep">Neopolitan</option>
-            <img src="">
-            <option value="york">New york style</option>
-            <img src="">
-
-        </div>
-        <div>
-            <p>For<em>Thin</em>crust you can choose</p>
-            <option value="new">New Heaven style</option>
-            <img src="">
-            <option value="st">St louis style</option>
-            <img src="">
-            <option value="nep">Neopolitan</option>
-            <img src="">
-            <option value="york">New york style</option>
-            <img src="">
-
-        </div>
-    </select>
-</div>
-<script src="js/scripts.js"></script>
 
 <body>
+    <div id="container">
+        <div id="card-size">
+            <p>Select your pizza size</p>
+            <button type="clickable" input="text">Small</button>
+            <button type="clickable" input="text">Medium</button>
+            <button type="clickable" input="text">Large</button>
+        </div>
+        <div name="" id="card-crust">
+            <p>Please select the type of crust you'll like your pizza to have</p>
+
+            <div>
+                <p>For <em>Thin</em> crust you can choose</p>
+                <select>
+                    <option value="new">New Heaven style</option>
+
+                    <option value="st">St louis style</option>
+
+                    <option value="nep">Neopolitan</option>
+
+                    <option value="york">New york style</option>
+
+                </select>
+            </div>
+            <div>
+                <p>For <em>Thin</em> crust you can choose</p>
+                <select>
+                    <option value="doub">Double-Dough</option>
+
+                    <option value="detro">Detroit/silicon</option>
+
+                    <option value="chic">Chicago Deep-dish</option>
+
+                    <option value="flat">Flat Bread </option>
+
+                </select>
+            </div>
+            <div>
+                <p>For <em>custom</em> crust you can choose</p>
+                <select>
+                    <option value="glut">Gluten-Free</option>
+
+                    <option value="veg">Vegan-friendly</option>
+
+            </div>
+            </select>      
+        </div>
+        <div id="toppings"></option></div>
+    </div>
+    <script src="js/scripts.js"></script>
 
 </body>
 
