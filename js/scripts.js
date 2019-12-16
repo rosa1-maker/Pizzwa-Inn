@@ -1,8 +1,3 @@
-$(document).ready(function() {
-  $("#order").click(function() {
-    $("order-form").toggle("5000");
-  });
-});
 function Results(type, size, crust, toppings) {
   this.type = type;
   this.size = size;
@@ -58,8 +53,8 @@ $(document).ready(function() {
     var pizzaType = $("#type").val();
     var pizzaSize = "#size".val();
     var pizzaToppings = "#topings".val();
-    var pizzaQuantity = parseInt("#quantity").val();
-    var pizzaPickup = "#delivery".val();
+    var pizzaQuant = parseInt($("#quantity").val());
+    var deliveryPizza = ("#delivery").val();
     var price = sizePrices[pizzaSize - 1];
     var DeliveryCost = deliveryPrices[pizzaPick - 1];
     var ToppingsCost = priceToppings[pizzaToppings - 1];
@@ -75,15 +70,17 @@ $(document).ready(function() {
     );
     newTotal = new TotalPrice(
       price,
-      pizzaQty,
+      pizzaQuant,
       DeliveryCost,
       ToppingsCost,
       crustCost
+
     );
     if (pizzaPick===1){
         alert( newOrder.order());
         alert("Your bill is: " + newTotal.finalTotal());
-        alert("Thank you for shopping with us! " )}
-        
+        alert("Thank you for shopping with us! " )
+    }
+
   });
 });
