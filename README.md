@@ -4,9 +4,9 @@
 <p>I have created this project as a way to present my skills and ability in web designing. This site acts as a platform of my journery in web development.</p>
 
 <h2>Code Examples</h2>
-<p>If you want to view my site click( https://rosa1-maker.github.io/The-Akan-naming-project/.)</p>
+<p>If you want to view my site click(  https://rosa1-maker.github.io/Pizzwa-Inn/.)</p>
 
-<p>If you want to view my codes click(https://github.com/rosa1-maker/The-Akan-naming-project)</p>
+<p>If you want to view my codes click(https://github.com/rosa1-maker/Pizzwa-Inn)</p>
 
 <h2>Installation</h2>
 
