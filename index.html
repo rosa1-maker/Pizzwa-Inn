@@ -16,75 +16,126 @@
 </head>
 
 <body>
-    <div id="container">
-        <div id="card-size">
-            <p>Select your pizza size</p>
-            <button type="clickable" input="text">Small</button>
-            <button type="clickable" input="text">Medium</button>
-            <button type="clickable" input="text">Large</button>
-        </div>
-        <div name="" id="card-crust">
-            <p>Please select the type of crust you'll like your pizza to have</p>
-
-            <div>
-                <p>For <em>Thin</em> crust you can choose</p>
-                <select>
-                    <option value="new">New Heaven style</option>
-
-                    <option value="st">St louis style</option>
-
-                    <option value="nep">Neopolitan</option>
-
-                    <option value="york">New york style</option>
-
-                </select>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="ddd">
+            <h1 class="heading">Pizzawa <spani>Inn</span></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navnav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navnav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <p>For <em>Thin</em> crust you can choose</p>
-                <select>
-                    <option value="doub">Double-Dough</option>
-
-                    <option value="detro">Detroit/silicon</option>
-
-                    <option value="chic">Chicago Deep-dish</option>
-
-                    <option value="flat">Flat Bread </option>
-
-                </select>
-            </div>
-            <div>
-                <p>For <em>custom</em> crust you can choose</p>
-                <select>
-                    <option value="glut">Gluten-Free</option>
-
-                    <option value="veg">Vegan-friendly</option>
-
-            </div>
-            </select>
-        </div>
-        <div id="card-toppings">
-            </option>
-            <form id="form">
-                <div class="row">
-                    <div class="col-md-2 form"></div>
-                    <input class="col-md-4 form-control name" type="text" id="toppings" name="toppings"
-                        placeholder="please enter the name of the topping you would like..." required>
-                </div>
-            </form>
-        </div>
-        <div id="card-order">
-            <button class="btn btn-success mx-auto d-block submit" id="okButton" type="order">Order</button>
-            <input class="col-md-2 form-control name" type="value" id="order" name="order" placeholder="how many pizza would you like to order?">
-            <button type="clickable" input="delivered">Delivered</button>
-            <button type="clickable" input="text">Pick it up</button>
-        </div>
-</div>
-<div id="checkout">
-        <button type="clickable" input="checkout">Checkout</button>
-
-</div>
+        </nav>
     </div>
-    <script src="js/scripts.js"></script>
+    <div id="container">
+        <div id="about">
+            <h2>About The Inn</h2>
+            <p> At Pizzwa Inn your satisfaction is </p>
+        </div>
+        <di id="order">
+            <div class="container-fluid" id="menu">
+                <div class="container">
+                    <h2 class="p-5" id="menuu">OUR MENU SPECIALS</h2>
+                    <button type="button" class="btn btn-outline-info btn-lg" id="checky">
+                        ORDER NOW
+                    </button>
+                    <div class="row">
+                        <div class="col-md-4 mx-auto py-2">
+                            <form id="myorder">
+                                <div class="form-group">
+                                    <label for="scushi">Select type:</label>
+                                    <select class="form-control" id="type">
+                                        <option>Margherita</option>
+                                        <option>Peperoni</option>
+                                        <option>Deluxe</option>
+                                        <option>Hawaiian</option>
+                                    </select>
+                                </div>
+                                <div class="form-type">
+                                    <label for="scushi">Select size:</label>
+                                    <select class="form" id="size">
+                                        <option value="1">Large---1000</option>
+                                        <option value="2">Medium---6500</option>
+                                        <option value="3">Small---350</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="scushi">Select crust:</label>
+                                    <select class="form-control" id="crusting">
+                                        <option value="1">Vegan-friendly ---100</option>
+                                        <option value="2">Stuffed ---120</option>
+                                        <option value="3">Gluten-free---200</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="scushi">Select topping:</label>
+                                    <select class="form-control" id="top">
+                                        <option value="1">Pepperoni ---100</option>
+                                        <option value="2">Mushrooms ---120</option>
+                                        <option value="3">onions ---80</option>
+                                        <option value="4">Sausage ---150</option>
+                                        <option value="5">Bacon ---200</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" required>
+                                    <label for="scushi">Quantity:</label>
+                                    <input type="number" id="quantity" class="form-control" min="1" required>
+                                </div>
+                                <div class="form-group" required="">
+                                    <label for="scushi">Delivery option:</label>
+                                    <select class="form-control" id="delivery">
+                                        <option value="1">No Delivery</option>
+                                        <option value="2">To be Delivered</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-info btn-block"
+                                        onclick="submit()">checkout</button>
+
+                                </div>
+                            </form>
+                        </div>
+                        <div id="checkout">
+                            <button type="clickable" input="checkout">Checkout</button>
+                        </div>
+                        <div class="card-contacts">
+                            <h4>CONTACTS</h4>
+                            <form id="form">
+                                <div class="row">
+                                    <div class="col-md-2 form"></div>
+                                    <input class="col-md-4 form-control name" type="text" id="name" name="name"
+                                        placeholder="Name..." required><br><br>
+                                    <input class="col-md-4 form-control email" type="email" id="email" name="email"
+                                        placeholder="Email..." required>
+                                    <div class="col-md-2">
+                                    </div>
+                                </div>
+                                <div class="row input">
+                                    <div class="col-md-2"></div>
+                                    <textarea class="form-control col-md-8 text" rows="12" name="message" id="message"
+                                        placeholder="Your message here..."></textarea>
+                                    <div class="col-md-2"></div>
+                                </div>
+                                <button class="btn btn-success mx-auto d-block submit" id="okButton"
+                                    type="submit">Submit</button>
+                                <br>
+                            </form>
+                        </div>
+                    </div>
+                    <script src="js/scripts.js"></script>
 
 </body>
 
