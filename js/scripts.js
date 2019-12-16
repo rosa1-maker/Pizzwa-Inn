@@ -52,13 +52,38 @@ TotalPrice.prototype.finalTotal = function() {
     (this.price + this.delivery + this.toppings + this.crust) * this.quantity
   );
 };
-$(document).ready(function(){
-    $('form#order').submit(function(event){
-        event.preventDefault();
-        var pizzaType=$('#type').val();
-        var pizzaSize=('#size').val();
-        var pizzaToppings=('#topings').val();
-        var pizzaQuantity=parseInt('#quantity').val();
-        var pizzaPickup=('#delivery').val();
-    })
+$(document).ready(function() {
+  $("form#order").submit(function(event) {
+    event.preventDefault();
+    var pizzaType = $("#type").val();
+    var pizzaSize = "#size".val();
+    var pizzaToppings = "#topings".val();
+    var pizzaQuantity = parseInt("#quantity").val();
+    var pizzaPickup = "#delivery".val();
+    var price = sizePrices[pizzaSize - 1];
+    var DeliveryCost = deliveryPrices[pizzaPick - 1];
+    var ToppingsCost = priceToppings[pizzaToppings - 1];
+    var crustCost = crustPrices[priceCrust - 1];
+    var topNames = toppingsName[pizzaTop - 1];
+    var crustName = crustNames[priceCrust - 1];
+    newOrder = new Results(
+      pizzaType,
+      pizzaSize,
+      crustName,
+      topNames,
+      crustName
+    );
+    newTotal = new TotalPrice(
+      price,
+      pizzaQty,
+      DeliveryCost,
+      ToppingsCost,
+      crustCost
+    );
+    if (pizzaPick===1){
+        alert( newOrder.order());
+        alert("Your bill is: " + newTotal.finalTotal());
+        alert("Thank you for shopping with us! " )}
+        
+  });
 });
