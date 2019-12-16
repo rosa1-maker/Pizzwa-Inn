@@ -23,7 +23,7 @@ function validateForm() {
       return false;
     } else {
       alert(
-        name + ", We have received your message. Thank you for reaching out to us."
+        name + ", Thank you for your comment."
       );
     }
     event.preventDefault();
@@ -31,10 +31,16 @@ function validateForm() {
   function TotalPrice (price, quantity, delivery,toppings,crust) {
     this.price= price;
     this.quantity=quantity;
-    this.delivery=delivery;
     this.toppings=toppings;
     this.crust=crust;
+    this.delivery=delivery;
 };
 TotalPrice.prototype.finalTotal = function () {
     return ( this.price + this.delivery + this.toppings + this.crust )* this.quantity ;
 };
+var sizePrices = [1200, 800, 600]
+var priceToppings = [100,120,80,150,200]
+var toppingsName= ["Pepperoni" , "mushroom" , "onion" ,"sausage", " bacon"]
+var crustNames= ["Crispy", "Stuffed", "Glutton-free"]
+var crustPrices = [100,120,200]
+var deliveryPrices = [0, 200];
