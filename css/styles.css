@@ -1,6 +1,27 @@
-html{
-    background-image: url("https://cdn.pixabay.com/photo/2018/04/09/07/54/pizza-3303388__340.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+*{
+   color: chartreuse;
     overflow-x: hidden;
+}
+.about{
+    background-color:blue;
+    font-family:"Noto", serif;
+}
+p{
+    color:white;
+    font-family: 'Noto' serif;
+    font-size:30px;
+}
+#menu{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat url("https://www.chicagotribune.com/resizer/Lu-mdt7kXYbkJFQPXrbREjOarxI=/800x600/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/HZYDZSX6FNFRND5OSRMK4455ZA.jpg");
+    background-size: cover;
+
+}
+#contacts{
+    background-color: thistle;
+}
+ h1,h2{
+    text-align: center;
+}
+#size{
+    color:darkred;
 }
